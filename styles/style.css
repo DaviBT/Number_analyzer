@@ -42,11 +42,11 @@ section > form > div>input:focus-within {
     color:black;
 }
 
-form>div>input[type=submit]{
-    margin:10px 0px;
+form>div>button, input[type=submit]{
     display:block;
+    margin:10px auto;
     font-size:1em;
-    width:100%;
+    width:30%;
     height:40px;
     background-color:rgb(1, 137, 179);
     color:white;
@@ -59,17 +59,19 @@ form>div>input[type=submit]:hover {
     background-color:#275553;
 }
 select#ilist{
+    display:block;
     width:15rem;
     background-color: rgb(1, 137, 179);
+    margin:auto;
 }
-html::-webkit-scrollbar{
-    width:1rem;
-}
-
-html::-webkit-scrollbar-track{
-    background:var(--black);
+select#ilist::-webkit-scrollbar{
+    width:.5rem;
 }
 
-html::-webkit-scrollbar-thumb{
-    background:var(--detailcolor2);
+select#ilist::-webkit-scrollbar-track{
+    background:#275553;
+}
+
+select#ilist::-webkit-scrollbar-thumb{
+    background:white;
 }

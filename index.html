@@ -15,15 +15,22 @@
     </header>
     <section>
 
-        <form method="get" onsubmit="sent()">
+        <form method="get">
 
                 <div class="select">
                     <label for="inum">Write a number between 1 and 100:</label>
                     <input type="number" name="num" id="inum" min="1" max="100" required>
-                    <input type="submit" value="Add">
+
+                    <button onclick="add()">Add</button>
+
                     <br><select name="list" id="ilist" size="6"></select>
+
+                    <br><input type="submit" value="Send">
                 </div>
 
+                <div id="res">
+
+                </div>
         </form>
         
     </section>
