@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Analyzer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Insert a number between 1 and 100, and we will analyze it for you!">
+</head>
+<body>
+    <noscript>Your browser does not supoort Javascript!</noscript>
+    <header>
+        <h1>Number Analyzer</h1>
+    </header>
+    <section>
+
+        <form method="get" onsubmit="sent()">
+
+                <div class="select">
+                    <label for="inum">Write a number between 1 and 100:</label>
+                    <input type="number" name="num" id="inum" min="1" max="100" required>
+                    <input type="submit" value="Add">
+                    <br><select name="list" id="ilist" size="6"></select>
+                </div>
+
+        </form>
+        
+    </section>
+
+<script type="text/javascript" src="scripts/script.js" defer></script>
+</body>
+</html>
